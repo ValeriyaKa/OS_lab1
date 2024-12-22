@@ -14,7 +14,7 @@ void WriteToFile(size_t iterations) {
 
     std::ofstream outFile(filePath, std::ios::binary | std::ios::app);
     if (!outFile) {
-        std::wcerr << L"Ошибка открытия файла для записи: " << filePath << std::endl;
+        std::wcerr << L"Error opening the file for writing:" << filePath << std::endl;
         delete[] buffer;
         return;
     }
